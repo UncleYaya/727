@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="Stylesheet" href="Styles.css" />
+  </head>
+  <body>
+    <header id="header">
+    <a href="https://github.com/UncleYaya?tab=repositories" class="logo"
+      >Yaseen Karriem</a
+    >
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </header>
+    <section>
+        <h2 id="text">Hi, and Welcome</h2>
+        <img src="c:\Users\Bonqueque\Downloads\bird1.png" id="bird1">
+        <img src="c:\Users\Bonqueque\Downloads\bird2.png" id="bird2">
+        <a href="#" id="btn">More</a>
+    </section>
+    <div class="monday">
+        <h2>Yaseen Karriem</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sit, ullam illo officia voluptatibus voluptates ducimus similique! Nam obcaecati animi ad. Dolores illo fugit aliquam obcaecati sit repudiandae totam ab.</p>
+    </div>
+    <script>
+        let text = document.getElementById('text')
+        let bird1 = document.getElementById('bird1')
+        let bird2 = document.getElementById('bird2')
+        let btn = document.getElementById('btn')
+
+        window.addEventListener('scroll'), function(){
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -0.5 + '%';
+            img.style.top = value * -1.5 + 'px';
+            img.style.left = value * 2 + 'px';
+            img.style.top = value * -1.5 + 'px';
+            img.style.left = value * -5 + 'px';
+            Btn.style.marginTop = value * 1.5 + 'px';
+        }
+    </script>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    overflow-x: hidden;
+    background: white;
+    min-height: 100vh;
+}
+#header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+#header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+#header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: greenyellow;
+    border-radius: 20px;
+}
+#header ul lu a:hover, #header ul lu a.active{
+    background: crimson;
+    color: white;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, greenyellow, transparent);
+    z-index: 10;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section #text{
+    position: absolute;
+    color: greenyellow;
+    font-size: 10vw;
+    text-align: center;
+    line-height: 0.55em;
+    font-family: sans-serif;
+    transform: translateY(-50%);
+}
+#Btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    background: white;
+    color: greenyellow;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    transform: translateY(100px
+    );
+}
+.monday{
+    position: relative;
+    padding: 100px;
+    background: greenyellow;
+}
+.monday h2{
+    font-size: 3.5em;
+    color: white;
+    margin-bottom: 10px;
+}
+.monday p{
+    font-size: 3.5em;
+    color: white;
+}
